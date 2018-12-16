@@ -28,7 +28,7 @@ Using both the mask and the canny edge detection as a reference, we randomly sam
 ### Training
 
 #### `convnet.py`
-Contains a simple convolutional network and an implementation of AlexNet, both of which are designed to train on the 400x400 image patches output by `preprocess_images.pyh`
+Contains a simple convolutional network and an implementation of AlexNet, both of which are designed to train on the 400x400 image patches output by `preprocess_images.py`
 
 #### `filterdetection.py`
 Contains a modified simple convolutional neural network and a modified implementation of AlexNet, designed to train on the 200x200 image patches from the distortion dataset. Note that in addition to modifying AlexNet for input parameter size, we conducted additional experimentation with different kernel and layer sizes to deal with the different scale of features that we encountered in this training set.
