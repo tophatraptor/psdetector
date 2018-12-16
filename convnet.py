@@ -93,8 +93,6 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 for epoch in range(30):  # loop over the dataset multiple times
-
-    running_loss = 0.0
     for i, data in enumerate(trainloader, 0):
         # get the inputs
         inputs, labels = data
@@ -248,8 +246,6 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.01, momentum=0.9)
 
 for epoch in range(40):
-
-    running_loss = 0.0
     for i, data in enumerate(trainloader, 0):
         inputs, labels = data
         inputs = inputs.cuda()
