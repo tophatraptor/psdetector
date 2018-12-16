@@ -56,10 +56,7 @@ valloader = torch.utils.data.DataLoader(
     shuffle = True
 )
 
-class Net(torch.nn.Module):
-    
-    #Our batch shape for input x is (3, 32, 32)
-    
+class Net(torch.nn.Module):    
     def __init__(self):
         super(Net, self).__init__()
         
